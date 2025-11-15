@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import { NavLink } from "react-router-dom"
 import ProductItem from "./ProductItem"
 
 export default function ProductCard() {
@@ -21,13 +20,13 @@ export default function ProductCard() {
     return (
         <div>
             <h1 className="text-center font-bold text-2xl mb-5">Каталог товаров</h1>
-            
+
             <div className="grid grid-cols-5 gap-4">
                 {products.map((product) => (
-                    <ProductItem 
-                        key={product.id} 
-                        product={product} 
-                        onDelete={() => deleteProduct(product.id)} 
+                    <ProductItem
+                        key={product.id}
+                        product={product}
+                        onDelete={() => deleteProduct(product.id)}
                     />
                 ))}
             </div>

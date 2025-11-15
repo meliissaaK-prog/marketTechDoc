@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 
 export default function AboutProduct() {
     const { id } = useParams()
-    const [product, setProduct] = useState(null)
+    const [product, setProduct] = useState({})
 
     useEffect(() => {
         async function getProduct() {
@@ -13,10 +13,6 @@ export default function AboutProduct() {
         }
         getProduct()
     }, [id])
-
-    if (!product) {
-        return <div>Загрузка...</div>
-    }
 
     return (
         <div>

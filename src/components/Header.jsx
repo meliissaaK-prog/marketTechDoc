@@ -8,7 +8,7 @@ export default function Header() {
 
     return (
         <div className="bg-blue-500 text-white p-4">
-            <h2 className="text-center font-bold">Шапка сайта</h2>
+            <h2 className="text-center font-bold">Каталог товаров</h2>
             
             <div className="flex flex-col max-w-[600px] mx-auto gap-5 mt-5">
                 <button 

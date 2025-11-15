@@ -3,6 +3,7 @@ import ProductCard from "./components/ProductCard";
 import AboutProduct from "./pages/AboutProduct";
 import NotFoundPage from "./pages/NotFoundPage";
 import MainPage from "./pages/MainPage";
+import Translatetion from "./components/slovar";
 
 export const router = createBrowserRouter([
     {
@@ -14,11 +15,15 @@ export const router = createBrowserRouter([
         Component: ProductCard
     },
     {
-        path: '/products/:id',
+        path: '/product/:id',
         Component: AboutProduct
     },
     {
         path: '*',
         Component: NotFoundPage
+    },
+    {
+        path: '/slovar',
+        Component: Translatetion
     }
 ]);
